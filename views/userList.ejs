@@ -1,0 +1,12 @@
+<h1>user list page</h1>
+<hr>
+<a href="/user/page">create an user</a>
+<hr>
+<ul>
+  <% for(var i=0;i<users.length;i++){ %>
+    <li>
+      <a href="/user/destroy/<%= users[i].id %>">X</a>
+       | <%= users[i].name %>
+    </li>
+  <% } %>
+</ul>
